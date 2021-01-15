@@ -1,3 +1,5 @@
+using Flux
+
 function main()
 	user_input = ""
 	while user_input != "exit"

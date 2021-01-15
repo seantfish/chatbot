@@ -1,3 +1,5 @@
+using JuliaDB
+
 function processInput()
 	user_input = ""
 	while user_input != "exit"
