@@ -1,5 +1,3 @@
-using Flux
-
 function main()
 	user_input = ""
 	while user_input != "exit"
@@ -9,5 +7,10 @@ function main()
 	end
 end
 
+function listen()
+end
+
+function respond()
+end
 
 main()
