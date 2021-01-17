@@ -9,11 +9,29 @@ explode in complexity, like FSMs do.
 ## Initial goals for this system
 
 Narrow scope of topics is needed to progress initially
-Part 1 Goals:
 
-1. Decide initial contexts to cover
-2. Implement semantic tag recognition for those contexts
-3. Build a context database
+Part 1 Goals - Topic recognition:
+
+1. Decide initial topics to cover - Small talk (Greeting, weather, status)
+2. Build a tag database
+3. Implement semantic tag recognition for those topics
+4. Handle non-topics
+
+Part 2 Goals - Context recognition:
+
+1. Decide relevant components of context
+2. Design and build context database
+3. Design context recognition (semantic analysis)
+
+Part 3 Goals - Response generation:
+
+1. We'll get there when we get there...
+
+Far out:
+
+- Explainable AI methods
+- Using these conversations to bootstrap a ML-based system
+- Read about predictive processing and active inference
 
 ## Kaizen-85 (Event[0]) - Ocelot Society (2016)
 
