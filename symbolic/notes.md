@@ -33,6 +33,15 @@ Far out:
 - Using these conversations to bootstrap a ML-based system
 - Read about predictive processing and active inference
 
+## AIML Systems - Pandorabots (2011)
+
+SOTA in Turing Test? Completely symbolic.
+
+ALICE
+
+
+Mitsuku
+
 ## Kaizen-85 (Event[0]) - Ocelot Society (2016)
 
 I played this game. It was interesting enough.
