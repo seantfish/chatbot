@@ -6,35 +6,29 @@ intelligent behavior. Not to say there isn't any use with recent techniques, but
 symbolic systems are just more easily deciphered. Well, at least when they don't
 explode in complexity, like FSMs do.
 
+Additionally, humans do use symbols, is it so wrong to think that we can use
+neural and symbolic methods together? Neuro-symbolic if you will?
+
 At the end of the day, I don't want a machine pretending to be human. 
 A degree of relatability will suffice.
 
-## Initial goals for this system
+## Current goals
 
-Narrow scope of topics is needed to progress initially
+First, implement a basic AIML interpreter.
+Possibly extend it later.
 
-Part 1 Goals - Topic recognition:
+Might try some case based reasoning later if I can think of a use case.
+I kind of want to build a game-playing program that integrates with this.
 
-1. Decide initial topics to cover - Small talk (Greeting, weather, status)
-2. Build a tag database
-3. Implement semantic tag recognition for those topics
-4. Handle non-topics
-
-Part 2 Goals - Context recognition:
-
-1. Decide relevant components of context
-2. Design and build context database
-3. Design context recognition (semantic analysis)
-
-Part 3 Goals - Response generation:
-
-1. We'll get there when we get there...
 
 Far out:
 
 - Explainable AI methods
+- Causal inference stuff but I need to learn more stats first
 - Using these conversations to bootstrap a ML-based system
-- Read about predictive processing and active inference
+
+Here's a random thought: The Turing Test, but the AI is guessing if you're
+really who you say you are.
 
 ## AIML Systems - Pandorabots (2011)
 Paper describing AIML here: https://arxiv.org/pdf/1307.3091.pdf
@@ -59,15 +53,31 @@ priority
 - aiml tag sandwiches the file
 - category tag consists of user input, response, and optional context
 - pattern tag consists of possible user input
-    - I wonder if Kaizen rearranges in preprocessing
+    - I wonder if Kaizen rearranges in preprocessing to fit patterns
 - template tag consists of possible answers, can save data,
 activate other programs, it does the heavy lifting
 - star index tag represents a text fragment in the pattern
 - srai tag does symbolic reduction, allowing for targeting/redirecting
 different pattern models for one template, allowing for efficiency
     - makes you wonder how search engines parse user input
+- srai tag allows for synonyms as well
+- random and li tags allow for random selection of responses
+- set and get allows for variables
+- that tag prompts analysis of last response by chatbot to contextualize user
+response to chatbot
+- topic tag defines a narrow scope for conversation, reducing pattern search
+- think tag for behind the scenes data processing
+- condition tag for when choosing from multiple possible answers, like case in
+other languages
+- bot tag to define bot properties
 
-to be continued
+Interpreter
+1. capture source code line
+2. check and analyze the line syntactically and semantically
+3. if no errors, translate to binary
+
+ProgramD is an open source AIML program: https://github.com/noelbush-xx/programd
+
 
 SOTA in Turing Test? Completely symbolic.
 
@@ -91,7 +101,8 @@ vocabulary/dictionary is adjusted based on this
 "it" and other referential words) while identifying information and gameplay 
 events in LTM
 
-Dialog is made of bits and pieces of phrases, which are combined and randomized to allow for variety in responses
+Dialog is made of bits and pieces of phrases, which are combined and randomized 
+to allow for variety in responses
 
 One testing methodology involved a playtester thinking they were intracting 
 with Kaizen, while a dev was actually interacting by using a list of rules and 
