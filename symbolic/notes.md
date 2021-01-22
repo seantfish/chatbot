@@ -6,6 +6,9 @@ intelligent behavior. Not to say there isn't any use with recent techniques, but
 symbolic systems are just more easily deciphered. Well, at least when they don't
 explode in complexity, like FSMs do.
 
+At the end of the day, I don't want a machine pretending to be human. 
+A degree of relatability will suffice.
+
 ## Initial goals for this system
 
 Narrow scope of topics is needed to progress initially
@@ -34,11 +37,39 @@ Far out:
 - Read about predictive processing and active inference
 
 ## AIML Systems - Pandorabots (2011)
+Paper describing AIML here: https://arxiv.org/pdf/1307.3091.pdf
+
+Intro
+
+- based on pattern recognition / matching techniques
+- relies on a stimulus-response pattern
+- ELIZA chatbot - first generation chatbot
+- JULIA chatbot (Mauldin 1994) - no relation to language - 2nd gen chatbot
+- ALICE chatbot - forerunner of 3rd gen chatbots
+
+Syntax
+
+- AIML is an interpreted language
+- Important tags: category, pattern, template
+    - category: unit of knowledge/dialogue in the knowledge base
+    - pattern: possible user input
+    - template: response format
+- "*" and "_" represent wildcards for replacing strings, with "_" taking higher
+priority
+- aiml tag sandwiches the file
+- category tag consists of user input, response, and optional context
+- pattern tag consists of possible user input
+    - I wonder if Kaizen rearranges in preprocessing
+- template tag consists of possible answers, can save data,
+activate other programs, it does the heavy lifting
+- star index tag represents a text fragment in the pattern
+- srai tag does symbolic reduction, allowing for targeting/redirecting
+different pattern models for one template, allowing for efficiency
+    - makes you wonder how search engines parse user input
+
+to be continued
 
 SOTA in Turing Test? Completely symbolic.
-
-ALICE
-
 
 Mitsuku
 
