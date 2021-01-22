@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0.1">
 <category>
-    <pattern> HELLO </pattern>
-    <template>
-        Guten tag mein freund! Es ist mich, BASIC!
-    </template>
+    <pattern>HELLO</pattern>
+    <template>Guten tag mein freund! Es ist mich, BASIC!</template>
 </category>
 </aiml>

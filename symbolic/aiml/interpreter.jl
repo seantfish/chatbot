@@ -1,13 +1,15 @@
 # AIML Interpreter
-# AIML is like XML
 
-using EzXML
+using EzXML, DataFrames
 
 function parseAIML(fileName)
     doc = readxml(fileName)
     aiml = root(doc)
     for item in eachelement(aiml)
-        print(item)
+        for phrase in eachelement(item)
+            ph = strip(nodecontent(phrase))
+            println(ph)
+        end
     end
 end  
 
