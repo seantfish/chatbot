@@ -2,6 +2,7 @@
 
 using EzXML, DataFrames
 
+# Build graph DataFrame for quick access
 function parseAIML(fileName)
     doc = readxml(fileName)
     aiml = root(doc)
@@ -11,6 +12,16 @@ function parseAIML(fileName)
             println(ph)
         end
     end
-end  
+end
+
+# Preprocess user input
+function parsePrompt(prompt)
+end
+
+# Find pattern matching processed user input and choose proper handler
+function matchPrompt(prompt)
+end
+
+
 
 parseAIML("basic.aiml")
