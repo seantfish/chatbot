@@ -7,6 +7,7 @@ using EzXML, DataFrames
 function parseaiml(fileName)
     doc = readxml(fileName)
     aiml = root(doc)
+    
     for item in eachelement(aiml)
         for phrase in eachelement(item)
             ph = strip(nodecontent(phrase))

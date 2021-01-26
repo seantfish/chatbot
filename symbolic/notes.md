@@ -14,7 +14,11 @@ A degree of relatability will suffice.
 
 ## Current goals
 
-First, implement a basic AIML interpreter.
+First, implement a rule-based chatbot script interpreter in Julia.
+This allows for extending software with ML and NN techniques without the
+2 language problem.
+Wait actually look into ChatScript. AIML seems needlessly complicated in some
+areas and might be inferior.
 Possibly extend it later.
 
 Might try some case based reasoning later if I can think of a use case.
@@ -29,6 +33,11 @@ Far out:
 
 Here's a random thought: The Turing Test, but the AI is guessing if you're
 really who you say you are.
+
+## ChatScript
+
+https://github.com/ChatScript/ChatScript
+
 
 ## AIML Systems - Pandorabots (2011)
 Paper describing AIML here: https://arxiv.org/pdf/1307.3091.pdf
