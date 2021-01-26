@@ -3,7 +3,8 @@
 using EzXML, DataFrames
 
 # Build graph DataFrame for quick access
-function parseAIML(fileName)
+# Need to learn more about tree in memory
+function parseaiml(fileName)
     doc = readxml(fileName)
     aiml = root(doc)
     for item in eachelement(aiml)
@@ -15,13 +16,15 @@ function parseAIML(fileName)
 end
 
 # Preprocess user input
-function parsePrompt(prompt)
+function parseprompt(prompt)
+    matchPrompt(uppercase(prompt))
+    # Define default sentence structures to fit? KZ
 end
 
 # Find pattern matching processed user input and choose proper handler
-function matchPrompt(prompt)
+function matchprompt(prompt)
 end
 
 
 
-parseAIML("basic.aiml")
+parseaiml("basic.aiml")

@@ -128,4 +128,19 @@ and reassembly rules, could also be represented by a 3D matrix
 
 ## BLAH - J.L. Weiner (1980)
 
-Explains its reasoning...
+Explainable AI
+
+- BLAH is comprised of a knowledge base, feeding a reasoning component, which
+works in tandem with an explanation generator
+- Reasoning component written in AMORD, which uses production rules consisting
+of a pattern and a body, where body is run when currently believed assertion
+matches pattern
+- Knowledge base is segmented between system and user view, each containing
+respective known assertions and rules
+- Also segmented into partitions based on subject, allowing substitution of
+nouns if they are effectively synonymous
+- Also segmented into worlds with different initial premises,
+allowing hypothetical reasoning
+- Explanations use logical graphs
+
+AMORD is a deductive procedure system.
