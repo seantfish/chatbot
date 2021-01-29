@@ -34,6 +34,12 @@ Far out:
 Here's a random thought: The Turing Test, but the AI is guessing if you're
 really who you say you are.
 
+## Infocom parser
+
+http://ifwiki.org/index.php/Infocom-type_parser
+
+http://thomaswc.com/serious/ifzorkcould.html
+
 ## ChatScript
 
 https://github.com/ChatScript/ChatScript
