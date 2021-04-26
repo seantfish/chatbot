@@ -26,3 +26,5 @@ Manifest.toml
 # Other files
 recordings
 symbolic/aiml-en-us-foundation-alice
+datasets
+venv
